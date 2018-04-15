@@ -193,7 +193,7 @@ class DataRunnerCcxtCommand extends Command
         foreach ($ex_loop as $ex) {
             $exid = $ex->id;
             $exchange = $ex->exchange;
-            $classname = '\ccxt\\' . $exchange;
+            $classname = '\ccxt\\' . strtolower($exchange);
             ${'bh_'.$exchange} = new $classname(array (
                 'enableRateLimit' => true,
                 'apiKey'   => Config::bowhead_config(strtoupper($exchange) .'_APIKEY'),
