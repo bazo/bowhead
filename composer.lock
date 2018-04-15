@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ce080e32373620df3af89e8f832097c",
+    "content-hash": "e74339cb5df94703b9adbd8cb95f35b7",
     "packages": [
         {
             "name": "andreas-glaser/php-helpers",
@@ -4079,6 +4079,71 @@
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "time": "2017-11-27T11:13:29+00:00"
+        },
+        {
+            "name": "tracy/tracy",
+            "version": "v2.4.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/tracy.git",
+                "reference": "ead5141731a21cfd0710b092351d923549d2b2ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/ead5141731a21cfd0710b092351d923549d2b2ad",
+                "reference": "ead5141731a21cfd0710b092351d923549d2b2ad",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-session": "*",
+                "php": ">=5.4.4"
+            },
+            "require-dev": {
+                "nette/di": "~2.3",
+                "nette/tester": "~1.7"
+            },
+            "suggest": {
+                "https://nette.org/donate": "Please support Tracy via a donation"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src"
+                ],
+                "files": [
+                    "src/shortcuts.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "😎 Tracy: the addictive tool to ease debugging PHP code for cool developers. Friendly design, logging, profiler, advanced features like debugging AJAX calls or CLI support. You will love it.",
+            "homepage": "https://tracy.nette.org",
+            "keywords": [
+                "Xdebug",
+                "debug",
+                "debugger",
+                "nette",
+                "profiler"
+            ],
+            "time": "2018-03-23T17:15:58+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

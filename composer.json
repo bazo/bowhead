@@ -21,6 +21,7 @@
         "php-ai/php-ml": "^0.4.1",
         "predis/predis": "^1.1",
         "ratchet/pawl": "^0.2.3",
+        "tracy/tracy": "^2.4",
         "webpatser/laravel-uuid": "^2.0",
         "xethron/migrations-generator": "^2.0"
     },
