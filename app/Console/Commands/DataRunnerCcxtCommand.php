@@ -144,7 +144,7 @@ class DataRunnerCcxtCommand extends Command
              */
             $exchanges = \ccxt\Exchange::$exchanges;
             foreach ($exchanges as $exchange) {
-                $classname = '\ccxt\\' . $exchange;
+                $classname = '\ccxt\\' . strtolower($exchange);
                 $class = new $classname;
 
                 $ins = [];
