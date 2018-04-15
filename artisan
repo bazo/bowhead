@@ -15,6 +15,8 @@
 
 require __DIR__.'/bootstrap/autoload.php';
 
+\Tracy\Debugger::enable(\Tracy\Debugger::PRODUCTION, __DIR__ . '/../storage/logs');
+
 $app = require_once __DIR__.'/bootstrap/app.php';
 
 /*
